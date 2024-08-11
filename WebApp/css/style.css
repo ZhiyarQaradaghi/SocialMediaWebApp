@@ -1,0 +1,46 @@
+header {
+    padding: 15px 0 5px 0;
+}
+
+header h1 {
+    max-width: fit-content;
+    margin: auto;
+}
+
+nav h5 {
+    max-width: fit-content;
+    margin: auto;
+}
+
+body {
+    background-color: rgb(52, 86, 139);
+    color: white;
+}
+
+main {
+    background-color: white;
+    color: black;
+    width: 40%;
+    margin: auto;
+    margin-top: 2em;
+    border-radius: 5px;
+}
+
+main h6#postHead {
+    max-width: fit-content;
+    margin: auto;
+    padding: 1.1em;
+    font-size: 1.1em;
+}
+
+
+div.card {
+    padding: 3em;
+}
+
+button.btn.btn-primary {
+    background-color: rgb(52, 86, 139);
+    border-color: rgb(52, 86, 139);
+    width: 50%;
+    margin: auto;
+}
