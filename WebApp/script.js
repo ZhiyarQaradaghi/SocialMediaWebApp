@@ -12,7 +12,7 @@ async function addPost() {
         document.querySelector('#validate').style.display = 'none';
     }
 
-    const response = await fetch('http://localhost:3000/blog', 
+    const response = await fetch('http://localhost:8080/article', 
         {
             method: 'POST',
             headers: {'Content-type':'application/json'},
@@ -25,7 +25,7 @@ async function addPost() {
 }
 
 async function showPost() {
-    const response = await fetch('http://localhost:3000/blog');
+    const response = await fetch('http://localhost:8080/article');
     const posts = await response.json();
     const postsReversed = posts.reverse();
     console.log(postsReversed);

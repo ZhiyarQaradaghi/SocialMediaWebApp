@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const path = require('path')
-const port = 3000
+const port = 8080
 const sqlite3 = require('sqlite3').verbose();  
 var cors = require('cors')
 
@@ -11,7 +11,7 @@ app.use(cors())
 
 
 
-app.post('/blog', (req, res) => {
+app.post('/article', (req, res) => {
     const {name, content} = req.body;
     const date = Date.now();
     db.run(
@@ -34,7 +34,7 @@ app.post('/blog', (req, res) => {
 })
 
 
-app.get('/blog', (req, res) => {
+app.get('/article', (req, res) => {
     db.all( 
         `
             SELECT * FROM posts
